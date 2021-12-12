@@ -14,7 +14,7 @@ jobs:
       postgres:
         image: docker://postgres
         ports:
-          - 5432:5432
+          - 5432:5432 
         env:
           POSTGRES_USER: user
           POSTGRES_PASSWORD: hackme
@@ -43,8 +43,8 @@ jobs:
       - name: build-push
         uses: docker/build-push-action@v1
         with:
-          username: ${{ secrets.REGISTRY_LOGIN }}
-          password: ${{ secrets.REGISTRY_TOKEN }}
-          repository: alvassin/backendschool2019
+          username: ignat1
+          password: qazxsw123
+          repository: ignat1/course_web
           target: api
           tags: 0.0.1, latest

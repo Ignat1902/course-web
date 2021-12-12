@@ -1,13 +1,13 @@
-PROJECT_NAME ?= backendschool2019
+PROJECT_NAME ?= course_web
 VERSION = $(shell python3 setup.py --version | tr '+' '-')
-PROJECT_NAMESPACE ?= alvassin
+PROJECT_NAMESPACE ?= ignat1
 REGISTRY_IMAGE ?= $(PROJECT_NAMESPACE)/$(PROJECT_NAME)
 
 all:
 	@echo "make devenv		- Create & setup development virtual environment"
 	@echo "make lint		- Check code with pylama"
 	@echo "make postgres	- Start postgres container"
-	@echo "make clean		- Remove files created by distutils"
+	@echo "make clean		- Remove fiwles created by distutils"
 	@echo "make test		- Run tests"
 	@echo "make sdist		- Make source distribution"
 	@echo "make docker		- Build a docker image"
