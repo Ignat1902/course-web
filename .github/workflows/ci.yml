@@ -44,7 +44,7 @@ jobs:
         uses: docker/build-push-action@v1
         with:
           username: ignat1
-          password: qazxsw123
+          password: Qazxsw123
           repository: ignat1/course_web
           target: api
           tags: 0.0.1, latest
